@@ -10,13 +10,13 @@
         font: normal 13px/20px Arial, Helvetica, sans-serif;
         word-wrap: break-word;
         color: #eee;
-        background: #353535;
+        background: #da251c;
         margin: 0;
         oveverflow: hidden;
       }
       #countdown {
         width: 465px;
-        height: 112px;
+        height: 122px;
         text-align: center;
         background: #222;
         background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
@@ -38,7 +38,7 @@
       #countdown:before {
         content: "";
         width: 8px;
-        height: 65px;
+        height: 70px;
         background: #444;
         background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
         background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
@@ -56,7 +56,7 @@
       #countdown:after {
         content: "";
         width: 8px;
-        height: 65px;
+        height: 70px;
         background: #444;
         background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
         background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
@@ -176,13 +176,13 @@
       h1 {
         position: absolute;
         font-size: 3vw;
-        color: rgb(222, 221, 221);
+        color: rgb(24, 71, 133);
         text-align: center;
         line-height: 2em;
         z-index: 10;
         transform: skewY(-7deg);
-        text-shadow: 5px 5px 0 #222, 6px 6px 0 #333, 8px 8px 0 #444,
-          10px 10px 0 #555, 12px 12px 0 #555;
+        text-shadow: 2px 2px 0 #222, 3px 3px 0 #333, 4px 4px 0 #444,
+          5px 5px 0 #555, 6px 6px 0 #555;
         animation: floating 5s ease-in infinite;
       }
 
@@ -259,7 +259,7 @@
       var tet_dong_day = new Audio('tet_dong_day.mp3');
       tet_dong_day.setAttribute('crossorigin', 'anonymous');
 
-      if (seconds == 0 ) {
+      if (hours ==0 && minutes ==0 && seconds == 0) {
         countdown_c.style.display = "none";
         countdown_t.style.display = "flex";
         tet_dong_day.play();
